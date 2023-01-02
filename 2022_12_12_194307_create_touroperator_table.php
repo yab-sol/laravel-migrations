@@ -17,6 +17,7 @@ class CreateTouroperatorTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->text('description');
             $table->integer('phonenumberp');
             $table->integer('phonenumbers')->nullable();
             $table->string('physicaladdress');
