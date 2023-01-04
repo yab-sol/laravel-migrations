@@ -18,12 +18,14 @@ class CreatePackageTable extends Migration
             $table->string('name');
             $table->integer('price');
             $table->text('description');
+            $table->text('departuredate');
             $table->string('accomodation');
             $table->text('itenary')->nullable();
             $table->string('type')->nullable();
             $table->string('included')->nullable();
             $table->string('excluded')->nullable();
             $table->string('duration');
+            $table->text('operatedin')->nullable();
             $table->unsignedBigInteger('tourid');
             $table->foreign('tourid')->references('id')->on('touroperator');
             $table->timestamps();
