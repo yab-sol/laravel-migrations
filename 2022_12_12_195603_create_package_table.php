@@ -27,6 +27,7 @@ class CreatePackageTable extends Migration
             $table->string('duration');
             $table->text('operatedin')->nullable();
             $table->unsignedBigInteger('tourid');
+            $table->integer('status');
             $table->foreign('tourid')->references('id')->on('touroperator');
             $table->timestamps();
         });
