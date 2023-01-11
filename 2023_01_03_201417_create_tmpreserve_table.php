@@ -19,6 +19,7 @@ class CreateTmpreserveTable extends Migration
             $table->unsignedBigInteger('userid');
             $table->unsignedBigInteger('packageid');
             $table->unsignedBigInteger('tourid');
+            $table->string('duration');
             $table->timestamps();
         });
     }
