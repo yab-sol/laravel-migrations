@@ -20,7 +20,7 @@ class CreateAdministratorTable extends Migration
             $table->string('email')->unique();
             $table->integer('phonenumber');
             $table->string('password');
-            $table->integer('status');
+            $table->tinyInteger('status')->default(0);
             $table->timestamps();
             
         });
