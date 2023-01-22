@@ -27,7 +27,7 @@ class CreateTouroperatorTable extends Migration
             $table->string('bankaccountnumber');
             $table->string('bankname');
             $table->unsignedBigInteger('licenseid');
-            $table->integer('status');
+            $table->integer('status')->default(1);
             $table->foreign('licenseid')->references('id')->on('license');
 
             
