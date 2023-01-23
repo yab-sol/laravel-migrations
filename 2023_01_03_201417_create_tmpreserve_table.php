@@ -16,6 +16,7 @@ class CreateTmpreserveTable extends Migration
         Schema::create('tmpreserve', function (Blueprint $table) {
             $table->id();
             $table->date('departuredate');
+            $table->integer('qty');
             $table->unsignedBigInteger('userid');
             $table->unsignedBigInteger('packageid');
             $table->unsignedBigInteger('tourid');
