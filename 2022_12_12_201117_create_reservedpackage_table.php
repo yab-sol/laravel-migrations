@@ -17,6 +17,7 @@ class CreateReservedpackageTable extends Migration
             $table->id();
             $table->integer('amount');
             $table->date('departuredate');
+            $table->integer('qty');
             $table->unsignedBigInteger('userid');
             $table->unsignedBigInteger('packageid');
             $table->unsignedBigInteger('tourid');
